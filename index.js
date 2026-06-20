@@ -11,8 +11,8 @@ app.get("/", (req, res) => res.send("WebRTC Signaling Server is running."));
 
 const server = http.createServer(app);
 const io = new Server(server, {
-  path: "/socket",
-  cors: { origin: "*", methods: ["GET", "POST"] }
+  origin: "https://stream.vincentchan.uk", 
+  methods: ["GET", "POST"]
 });
 
 const recommendationsByCode = new Map();
