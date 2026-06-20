@@ -13,7 +13,7 @@ const server = http.createServer(app);
 const io = new Server(server, {
   path: "/socket",  
   cors: { 
-    origin: "stream.vincentchan.uk",
+    origin: "https://stream.vincentchan.uk",
     methods: ["GET", "POST"]
   }
 });
