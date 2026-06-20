@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  webrtc-signaling:
+    build: .
+    container_name: webrtc-signaling
+    restart: unless-stopped # Automatically restarts on crash or server reboot
+    ports:
+      - "4000:4000" # Maps port 4000 on your VPS to port 4000 in the container
+    environment:
+      - NODE_ENV=production
+      - PORT=4000
