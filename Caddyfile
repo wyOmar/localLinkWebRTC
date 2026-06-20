@@ -1,0 +1,3 @@
+webrtc.vincentchan.uk {
+    reverse_proxy webrtc-signaling:4000
+}
